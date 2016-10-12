@@ -1,0 +1,20 @@
+pdfcvter Release:
+
+1. Dependency library
+	zlib-1.2.8 lpng1624 libharu
+2. About the application
+	The total size is 254KB.
+	./pdfcvter test.txt test.pdf
+	./pdfcvter example.xml example.pdf
+3. How to build and clean
+	There are two ways to build the application and clean 
+	related output files.
+	Firstly, you can run make.sh and clean.sh in folder pdfcvter, 
+	the other is enter related library to run make and run make clean.
+	The sequece of building is zlib-1.2.8, lpng1624 and libharu.
+4. How to port to other platform
+	You just change all related Makefile build tool-chain.
+	For example, porting to arm CPU, you just need change “CC=gcc”
+	to "CC = arm-none-linux-gnueabi-gcc".
+5. How to execute on x64 PC
+	You just rebuild it on x64 PC.
